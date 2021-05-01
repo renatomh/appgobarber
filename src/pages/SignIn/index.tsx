@@ -47,7 +47,7 @@ const SignIn: React.FC = () => {
     // Criando a ref para a senha
     const passwordInputRef = useRef<TextInput>(null);
 
-    // Criando o sistema de navegaçõa entre as telas do aplicativo
+    // Criando o sistema de navegação entre as telas do aplicativo
     const navigation = useNavigation();
 
     // Importando o método de SignIn do hook de contexto

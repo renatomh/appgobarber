@@ -14,7 +14,14 @@ import Routes from './routes/index';
 const App: React.FC = () => (
   <NavigationContainer>
     {/* Definindo a StatusBar da aplicação */}
-    <StatusBar barStyle="light-content" backgroundColor="#312e38" />
+    <StatusBar
+      barStyle="light-content"
+      backgroundColor="#312e38"
+      // Essa opção faz com que o Android não conte a barra de notificações como tamanho do conteúdo
+      // Fazemos isso para evitar ter de usar o código abaixo nos cabeçalhos das páginas
+      // padding-top: ${Platform.OS == 'ios' ? getStatusBarHeight() + 24 : 24}px;
+      translucent
+    />
     {/* Definindo o contexto da aplicação */}
     <AppProvider>
       {/* Definindo a tela principal da aplicação */}

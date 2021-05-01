@@ -47,7 +47,7 @@ const SignUp: React.FC = () => {
     const emailInputRef = useRef<TextInput>(null);
     const passwordInputRef = useRef<TextInput>(null);
 
-    // Criando o sistema de navegaçõa entre as telas do aplicativo
+    // Criando o sistema de navegação entre as telas do aplicativo
     const navigation = useNavigation();
 
     // Função para lidar com a validação dos dados do formulário
@@ -80,7 +80,7 @@ const SignUp: React.FC = () => {
 
                 // Avisando o usuário sbre o sucesso no cadastro
                 Alert.alert(
-                    'Cadsatro realizado com sucesso!',
+                    'Cadastro realizado com sucesso!',
                     'Você já pode fazer login na aplicação.'
                 );
 

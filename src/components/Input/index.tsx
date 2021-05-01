@@ -14,6 +14,7 @@ import { Container, TextInput, Icon } from './styles';
 interface InputProps extends TextInputProps {
     name: string;
     icon: string;
+    containerStyle?: {},
 }
 
 interface InputValueReference {
@@ -28,7 +29,7 @@ interface InputRef {
 }
 
 const Input: React.ForwardRefRenderFunction<InputRef, InputProps> = (
-    { name, icon, ...rest },
+    { name, icon, containerStyle = {}, ...rest },
     ref
 ) => {
     // Criadno a referência visual para o elemento
@@ -82,7 +83,7 @@ const Input: React.ForwardRefRenderFunction<InputRef, InputProps> = (
     }, [fieldName, registerField]);
 
     return (
-        <Container isFocused={isFocused} isErrored={!!error}>
+        <Container style={containerStyle} isFocused={isFocused} isErrored={!!error}>
             {/* Ajustando a cor se o campo estiver focado ou preenchido */}
             <Icon
                 name={icon}
