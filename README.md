@@ -2,15 +2,9 @@
 
 ## 💡 Ideia do projeto
 
-<br/>
-
 Projeto desenvolvido durante o bootcamp *GoStack* da Rocketseat, com os módulos de aplicativos mobile com *React Native*.
 
-<br/>
-
 ## 🔍 Funcionalidades
-
-<br/>
 
 * Realização de login em uma conta já existente na plataforma ou cadastro de um novo usuário;
 * Listagem dos prestadores de serviço cadatrados no sistema;
@@ -23,22 +17,14 @@ Projeto desenvolvido durante o bootcamp *GoStack* da Rocketseat, com os módulos
 * 
 * 
 
-<br/>
-
 ## 🛠 Tecnologias Utilizadas
-
-<br/>
 
 Para o desenvolvimento desse projeto, as seguintes tecnologias foram utilizadas:
 
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-<br/>
-
 ## 💻 Configuração do Projeto
-
-<br/>
 
 ### Primeiramente, clone o repositório para obter uma cópia do código em sua máquina local
 
@@ -79,8 +65,6 @@ $ # Para dispositivos iOS
 $ yarn ios
 ```
 
-<br />
-
 ## 🔨 *Build* do projeto para Publicação
 
 Para a publicação do aplicativo nas lojas de cada tipo de dispositivo (Play Store ou App Store) há diferentes passos a serem tomados
@@ -92,8 +76,6 @@ $
 ### Documentação:
 * [Publishing to Google Play Store](https://reactnative.dev/docs/signed-apk-android)
 * [Publishing to Apple App Store](https://reactnative.dev/docs/publishing-to-app-store)
-
-<br />
 
 ## 📄 Licença
 

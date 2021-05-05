@@ -38,7 +38,15 @@ export const UserName = styled.Text`
 `;
 
 /* Estilizando o botão para acessar o perfil do usuário */
-export const ProfileButton = styled.TouchableOpacity``;
+export const ProfileButton = styled.TouchableOpacity`
+    /* Empurrando o botão para a esquerda */
+    margin-left: auto;
+`;
+
+/* Estilizando o botão para sair o aplicativo */
+export const LogoutButton = styled.TouchableOpacity`
+    margin-left: 12px;
+`;
 
 /* Estilizando a imagem de perfil do usuário */
 export const UserAvatar = styled.Image`

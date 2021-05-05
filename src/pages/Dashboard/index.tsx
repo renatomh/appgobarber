@@ -13,6 +13,7 @@ import {
     HeaderTitle,
     UserName,
     ProfileButton,
+    LogoutButton,
     UserAvatar,
     ProvidersList,
     ProvidersListTitle,
@@ -73,6 +74,10 @@ const Dashboard: React.FC = () => {
                 <ProfileButton onPress={navigateToProfile}>
                     <UserAvatar source={{ uri: user.avatar_url }} />
                 </ProfileButton>
+
+                <LogoutButton onPress={signOut}>
+                    <Icon name="log-out" size={20} color="#FF9000" />
+                </LogoutButton>
             </Header>
 
             {/* Lista para os prestadores de serviço */}
