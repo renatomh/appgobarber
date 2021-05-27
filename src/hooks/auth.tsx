@@ -3,7 +3,7 @@ import React, {
   useCallback,
   useContext,
   useState,
-  useEffect
+  useEffect,
 } from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 
@@ -57,7 +57,7 @@ const AuthProvider: React.FC = ({ children }) => {
       // Inicializando os dados com os valores armazendos localmente no dispositivo
       const [token, user] = await AsyncStorage.multiGet([
         '@GoBarber:token',
-        '@GoBarber:user'
+        '@GoBarber:user',
       ]);
 
       // Verificando se há dados armazenados no navegador
@@ -72,7 +72,7 @@ const AuthProvider: React.FC = ({ children }) => {
 
       // Setando a flag 'loading' como falsa
       setLoading(false);
-    };
+    }
 
     // Chamando a função para caregar os dados
     loadStoragedData();
@@ -107,10 +107,7 @@ const AuthProvider: React.FC = ({ children }) => {
   // Função para realizar o logout
   const signOut = useCallback(async () => {
     // Removendo os dados salvos no armazenamento assíncrono do dispositivo
-    await AsyncStorage.multiRemove([
-      '@GoBarber:token',
-      '@GoBarber:user'
-    ]);
+    await AsyncStorage.multiRemove(['@GoBarber:token', '@GoBarber:user']);
 
     // Atualizando o estado do contexto de autenticação
     setData({} as AuthState);
@@ -129,11 +126,15 @@ const AuthProvider: React.FC = ({ children }) => {
         token: data.token,
         user,
       });
-    }, [setData, data.token]);
+    },
+    [setData, data.token],
+  );
 
   return (
     // Exportando as propriedades e funções do contexto
-    <AuthContext.Provider value={{ user: data.user, loading, signIn, signOut, updateUser }}>
+    <AuthContext.Provider
+      value={{ user: data.user, loading, signIn, signOut, updateUser }}
+    >
       {children}
     </AuthContext.Provider>
   );

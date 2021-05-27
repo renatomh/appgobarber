@@ -8,7 +8,6 @@
     "plugin:react/recommended",
     "airbnb",
     "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
     "plugin:prettier/recommended"
   ],
   "globals": {
@@ -37,6 +36,8 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "no-unused-expressions": "off",
+    "no-shadow": "off",
+    "camelcase": "off",
     "react/jsx-filename-extension": [
       1,
       {
@@ -47,11 +48,23 @@
     ],
     "import/prefer-default-export": "off",
     "import/no-duplicates": "off",
+    "import/no-extraneous-dependencies": "off",
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/explicit-function-return-type": [
       "error",
       {
         "allowExpressions": true
+      }
+    ],
+    "@typescript-eslint/ban-types": [
+      "warn",
+      {
+        "types": {
+          "{}": {
+            "message": "Prefer using defined types",
+            "fixWith": "{}"
+          }
+        }
       }
     ],
     "import/extensions": [

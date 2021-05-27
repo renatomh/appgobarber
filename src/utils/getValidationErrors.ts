@@ -12,7 +12,7 @@ export default function getValidationErrors(err: ValidationError): Errors {
   const validationErrors: Errors = {};
 
   // Percorrendo o array de erros
-  err.inner.forEach(error => {
+  err.inner.forEach((error: any) => {
     // Obtendo a mensagem de erro
     validationErrors[error.path] = error.message;
   });
