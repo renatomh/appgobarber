@@ -8,7 +8,7 @@ export const Container = styled.View`
   align-items: center;
   justify-content: center;
   /* Adicionando um espaçamento inferior no Android para quando o teclado for aberto */
-  padding: 0 30px ${Platform.OS === 'android' ? 150 : 40}px;
+  padding: 0 30px ${Platform.OS === 'android' ? 65 : 40}px;
 `;
 
 /* Estilizando o título */

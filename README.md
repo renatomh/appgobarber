@@ -14,8 +14,8 @@ Projeto desenvolvido durante o bootcamp *GoStack* da Rocketseat, com os módulos
 
 ## 💹 Extras
 
-* 
-* 
+*
+*
 
 ## 🛠 Tecnologias Utilizadas
 
@@ -67,11 +67,17 @@ $ yarn ios
 
 ## 🔨 *Build* do projeto para Publicação
 
-Para a publicação do aplicativo nas lojas de cada tipo de dispositivo (Play Store ou App Store) há diferentes passos a serem tomados
+Para a publicação do aplicativo nas lojas de cada tipo de dispositivo (Play Store ou App Store) há diferentes passos a serem tomados.
+
+### Android
+Além da [configuração para publicação de aplicativos com o React Native](https://reactnative.dev/docs/signed-apk-android), devemos executar os comandos abaixo para gerar o arquivo *.aab* (Android App Bundle):
 
 ```bash
-$ 
+$ cd android
+$ ./gradlew bundleRelease
 ```
+
+O arquivo gerado estará em ```android/app/build/outputs/bunlde/release/```.
 
 ### Documentação:
 * [Publishing to Google Play Store](https://reactnative.dev/docs/signed-apk-android)
