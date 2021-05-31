@@ -1,3 +1,5 @@
+<h1 align="center"><img alt="GoBarber" title="GoBarber" src=".github/logo.png" width="250" /></h1>
+
 # GoBarber - *Aplicativo Mobile*
 
 ## 💡 Ideia do projeto
@@ -14,8 +16,7 @@ Projeto desenvolvido durante o bootcamp *GoStack* da Rocketseat, com os módulos
 
 ## 💹 Extras
 
-*
-*
+* Botão para realizar o logout (sair) da aplicação;
 
 ## 🛠 Tecnologias Utilizadas
 
@@ -29,7 +30,7 @@ Para o desenvolvimento desse projeto, as seguintes tecnologias foram utilizadas:
 ### Primeiramente, clone o repositório para obter uma cópia do código em sua máquina local
 
 ```bash
-$ git clone ... && cd ...
+$ git clone https://github.com/renatomh/appgobarber.git && cd appgobarber
 ```
 
 ### Instale as dependências (comando para o yarn)
@@ -85,4 +86,4 @@ O arquivo gerado estará em ```android/app/build/outputs/bunlde/release/```.
 
 ## 📄 Licença
 
-Esse projeto está sob a licença ...
+Esse projeto está sob a licença **MIT**. Para mais informações, accesse [LICENSE](./LICENSE).
