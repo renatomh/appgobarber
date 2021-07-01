@@ -1,5 +1,7 @@
 <h1 align="center"><img alt="GoBarber" title="GoBarber" src=".github/logo.png" width="250" /></h1>
 
+<p align="center"><img src=".github/sample.gif" alt="sample" /></p>
+
 # GoBarber - *Aplicativo Mobile*
 
 ## 💡 Ideia do projeto
